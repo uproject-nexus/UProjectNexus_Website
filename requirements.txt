@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+jinja2
+python-multipart
+markdown2
+pandas
+numpy
+plotly
+python-dotenv
+google-genai
+SQLAlchemy
+psycopg2-binary
+python-docx
+reportlab
+matplotlib
