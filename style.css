@@ -1,1 +1,1033 @@
- :root{--bg:#07111f;--panel:#0d1b2b;--line:#233348;--text:#f7fafc;--muted:#9aaabd;--green:#21d883;--green2:#7cf0b5;--gold:#d7ad53}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 75% 10%,rgba(33,216,131,.1),transparent 28%),linear-gradient(#06101d,#091522 48%,#07111f);color:var(--text);font:14px Inter,system-ui,sans-serif;line-height:1.65}.grid{position:fixed;inset:0;pointer-events:none;opacity:.11;background-image:linear-gradient(rgba(255,255,255,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.05) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(#000,transparent 90%);z-index:-1}.wrap{width:min(1160px,92%);margin:auto}.site-header,header{position:sticky;top:0;z-index:20;background:rgba(5,13,24,.75);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}.nav-wrap{height:78px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:12px;color:#fff}.brand img{width:44px;height:44px;object-fit:contain}.brand span{display:flex;flex-direction:column;line-height:1}.brand b{font-size:13px;letter-spacing:.1em}.brand small{font-size:8px;letter-spacing:.12em;color:#8092a7;margin-top:5px}.nav-wrap nav{display:flex;gap:27px;font-size:12px;color:#bac6d3}.nav-wrap nav a:hover{color:#fff}.menu{display:none;background:none;border:0;color:#fff;font-size:23px}.hero{padding:105px 0 85px}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}.eyebrow,.heading small,.kicker,.manifesto small,.contact small{color:var(--green2);font-size:10px;font-weight:800;letter-spacing:.18em}.eyebrow{display:flex;align-items:center;gap:8px}.eyebrow i{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 15px var(--green);animation:pulse 1.7s infinite}.hero h1{font:800 clamp(44px,6vw,70px)/1.04 "Plus Jakarta Sans",Inter,sans-serif;letter-spacing:-.04em;margin:18px 0}.hero h1 em{font-style:normal;color:#85f1bb}.hero p{max-width:650px;color:var(--muted);font-size:16px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.btn{min-height:47px;padding:0 20px;border-radius:10px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;transition:.22s}.primary{background:linear-gradient(135deg,#18bf73,#24de87);color:#03170c;box-shadow:0 12px 32px rgba(33,216,131,.2)}.primary:hover{transform:translateY(-2px)}.ghost{border:1px solid var(--line);background:rgba(255,255,255,.025)}.ghost:hover{background:rgba(255,255,255,.07)}.proof{display:flex;gap:22px;color:#708196;font-size:10px;margin-top:24px;flex-wrap:wrap}.visual{min-height:390px;display:grid;place-items:center}.orb{width:390px;height:390px;position:relative;display:grid;place-items:center}.ring{position:absolute;border:1px solid rgba(33,216,131,.18);border-radius:50%}.r1{inset:42px;animation:spin 23s linear infinite}.r2{inset:96px;border-color:rgba(215,173,83,.17);animation:spin 31s linear infinite reverse}.core{width:140px;height:140px;border-radius:34px;background:#f5faf8;display:grid;place-items:center;box-shadow:0 0 55px rgba(33,216,131,.17),0 25px 60px rgba(0,0,0,.35)}.core img{width:110px;height:110px;object-fit:contain}.node{position:absolute;padding:7px 11px;border-radius:999px;background:rgba(8,20,33,.93);border:1px solid rgba(255,255,255,.08);font-size:9px;font-weight:800;letter-spacing:.12em}.ai{top:24px;right:25px;color:#a6f4ca}.data{left:10px;bottom:55px;color:#d1deeb}.auto{right:0;bottom:32px;color:#ebcd89}.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}.trust-grid>div{display:flex;justify-content:center;gap:9px;padding:19px 6px;border-right:1px solid var(--line);font-size:10px;color:#98a8b9}.trust-grid>div:last-child{border-right:0}.trust-grid b{color:var(--green)}.section{padding:105px 0}.heading{max-width:750px;margin-bottom:40px}.heading h2{font:800 clamp(32px,4vw,48px)/1.08 "Plus Jakarta Sans",Inter;margin:10px 0}.heading p{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.card{padding:24px;border:1px solid var(--line);border-radius:15px;background:linear-gradient(155deg,rgba(15,32,50,.8),rgba(7,17,29,.75));transition:.25s}.card:hover{transform:translateY(-5px);border-color:rgba(33,216,131,.28);box-shadow:0 18px 50px rgba(0,0,0,.22)}.ico{font-size:23px;color:var(--green)}.card h3{margin:15px 0 7px}.card p{margin:0;color:#8d9eaf;font-size:12px}.featured{padding-top:65px}.tag{color:var(--green2)!important;font-weight:700}.feature-panel{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;padding:34px;border-radius:20px;border:1px solid rgba(33,216,131,.2);background:radial-gradient(circle at 100% 0,rgba(33,216,131,.09),transparent 34%),rgba(10,24,39,.9);box-shadow:0 24px 70px rgba(0,0,0,.25)}.badge{display:inline-block;color:#8af0b9;font-size:8px;font-weight:800;letter-spacing:.12em;border:1px solid rgba(33,216,131,.25);padding:6px 9px;border-radius:999px}.feature-panel h3{font:800 31px/1.2 "Plus Jakarta Sans";margin:16px 0}.feature-panel p{color:var(--muted);font-size:13px}.features{display:grid;gap:11px;margin:20px 0}.features>div{display:flex;gap:10px}.features>div>b{color:var(--green)}.features strong,.features small{display:block}.features strong{font-size:12px}.features small{font-size:10px;color:#8496a9}.text-link{color:#9af3c2;font-weight:700;font-size:12px;display:inline-flex;gap:10px}.mock{border:1px solid rgba(255,255,255,.08);border-radius:13px;overflow:hidden;background:#071321}.m-top{height:38px;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:5px;padding:0 12px;color:#8395a8;font-size:8px}.m-top span{width:6px;height:6px;border-radius:50%;background:#304357}.m-top b{margin-left:auto}.m-body{display:grid;grid-template-columns:70px 1fr;min-height:290px}.m-body aside{border-right:1px solid var(--line)}.m-main{padding:15px}.m-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px}.m-row>div{padding:11px;border:1px solid rgba(33,216,131,.14);background:rgba(33,216,131,.04);border-radius:9px}.m-row small{display:block;color:#61778c;font-size:7px;letter-spacing:.1em}.m-row b{display:block;font-size:23px}.chart{height:120px;padding:13px;display:flex;gap:8px;align-items:end;border:1px solid var(--line);border-radius:9px}.chart i{display:block;flex:1;background:linear-gradient(#37e49a,#0a754d);border-radius:4px 4px 2px 2px}.note{margin-top:15px;border-left:3px solid var(--green);padding:13px 15px;background:rgba(33,216,131,.04);border-radius:0 9px 9px 0;color:#9aabba;font-size:10px}.note b{color:#d7e4ed}.case-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:60px;align-items:center}.mantap-logo{min-height:280px;display:grid;place-items:center;padding:25px;border:1px solid var(--line);border-radius:16px;background:#f4faf7}.mantap-logo img{width:220px;max-width:90%;object-fit:contain}.case h2{font:800 40px/1.1 "Plus Jakarta Sans";margin:8px 0}.case p{color:var(--muted)}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0}.metrics div{padding:14px;border:1px solid var(--line);border-radius:11px;background:rgba(255,255,255,.02)}.metrics b{display:block;color:var(--green2);font-size:26px}.metrics span{color:#8294a7;font-size:9px}.caveat{padding:11px 13px;border:1px solid rgba(215,173,83,.18);border-radius:10px;background:rgba(215,173,83,.035)}.caveat b{font-size:8px;letter-spacing:.12em;color:#e3c477}.caveat p{font-size:10px;margin:4px 0 0}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.step{display:flex;gap:12px;padding:20px;border:1px solid var(--line);border-radius:13px}.step>b{color:var(--green)}.step strong,.step small{display:block}.step strong{font-size:12px}.step small{color:#8294a7;font-size:10px;margin-top:3px}.manifesto{display:grid;grid-template-columns:1.2fr auto 1fr;gap:25px;align-items:center;padding:34px;border:1px solid var(--line);border-radius:17px;background:linear-gradient(115deg,rgba(33,216,131,.06),rgba(255,255,255,.015))}.manifesto h2{font:800 28px/1.1 "Plus Jakarta Sans"}.manifesto h2 span{color:var(--green)}.manifesto>strong{font-size:38px;color:var(--green2)}.manifesto h3{margin:7px 0}.manifesto p{color:var(--muted);font-size:11px}.contact-panel{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:32px;border:1px solid rgba(33,216,131,.18);border-radius:17px;background:radial-gradient(circle at 80% 0,rgba(33,216,131,.08),transparent 30%),rgba(255,255,255,.02)}.contact-panel h2{font:800 32px/1.1 "Plus Jakarta Sans";margin:8px 0}.contact-panel p{color:var(--muted);margin:0}.contact-panel .actions{margin:0}footer{border-top:1px solid var(--line);padding:38px 0;margin-top:45px}.foot{display:flex;justify-content:space-between;gap:25px;align-items:end}.foot>div:last-child{text-align:right;color:#8597aa;font-size:10px}.foot p{margin:0}.foot .brand img{width:40px;height:40px}.reveal{opacity:0;transform:translateY(17px);transition:.7s}.reveal.show{opacity:1;transform:none}.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}@keyframes pulse{50%{opacity:.4;transform:scale(.86)}}@keyframes spin{to{transform:rotate(360deg)}}@media(max-width:950px){.hero-grid,.feature-panel,.case-grid{grid-template-columns:1fr}.visual{min-height:330px}.cards,.steps{grid-template-columns:repeat(2,1fr)}.feature-panel{padding:25px}.contact-panel{display:block}.contact-panel .actions{margin-top:20px}.manifesto{grid-template-columns:1fr}.manifesto>strong{display:none}}@media(max-width:700px){.nav-wrap nav{display:none;position:absolute;top:77px;left:4%;right:4%;padding:14px;flex-direction:column;background:#07111f;border:1px solid var(--line);border-radius:12px}.nav-wrap nav.open{display:flex}.menu{display:block}.hero{padding:75px 0 55px}.hero h1{font-size:43px}.hero p{font-size:14px}.orb{width:300px;height:300px}.core{width:110px;height:110px}.core img{width:88px;height:88px}.r1{inset:28px}.r2{inset:66px}.ai{top:5px;right:0}.data{left:0;bottom:24px}.auto{right:0;bottom:8px}.trust-grid{grid-template-columns:1fr 1fr}.cards,.steps,.metrics{grid-template-columns:1fr}.section{padding:80px 0}.mantap-logo{min-height:220px}.case h2{font-size:34px}.contact-panel h2{font-size:29px}.foot{display:block}.foot>div:last-child{text-align:left;margin-top:20px}}
+/* ==========================================================================
+   1. VARIABLES & RESET BASICS
+   ========================================================================== */
+:root {
+  --bg: #07111f;
+  --panel: #0d1b2b;
+  --line: #233348;
+  --text: #f7fafc;
+  --muted: #9aaabd;
+  --green: #21d883;
+  --green2: #7cf0b5;
+  --gold: #d7ad53;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at 75% 10%, rgba(33, 216, 131, 0.1), transparent 28%), linear-gradient(#06101d, #091522 48%, #07111f);
+  color: var(--text);
+  font: 14px Inter, system-ui, sans-serif;
+  line-height: 1.65;
+}
+
+/* Background Grid Overlay */
+.grid {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.11;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(#000, transparent 90%);
+  z-index: -1;
+}
+
+.wrap {
+  width: min(1160px, 92%);
+  margin: auto;
+}
+
+/* ==========================================================================
+   2. HEADER & NAVIGATION
+   ========================================================================== */
+.site-header,
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(5, 13, 24, 0.75);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.nav-wrap {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand & Logo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.brand span {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.brand b {
+  font-size: 13px;
+  letter-spacing: 0.1em;
+}
+
+.brand small {
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  color: #8092a7;
+  margin-top: 5px;
+}
+
+/* Navigation Links */
+.nav-wrap nav {
+  display: flex;
+  gap: 27px;
+  font-size: 12px;
+  color: #bac6d3;
+}
+
+.nav-wrap nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-wrap nav a:hover {
+  color: #fff;
+}
+
+.menu {
+  display: none;
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 23px;
+}
+
+/* ==========================================================================
+   3. HERO SECTION & BUTTONS
+   ========================================================================== */
+.hero {
+  padding: 105px 0 85px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.eyebrow,
+.heading small,
+.kicker,
+.manifesto small,
+.contact small {
+  color: var(--green2);
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.eyebrow i {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 15px var(--green);
+  animation: pulse 1.7s infinite;
+}
+
+.hero h1 {
+  font: 800 clamp(44px, 6vw, 70px)/1.04 "Plus Jakarta Sans", Inter, sans-serif;
+  letter-spacing: -0.04em;
+  margin: 18px 0;
+}
+
+.hero h1 em {
+  font-style: normal;
+  color: #85f1bb;
+}
+
+.hero p {
+  max-width: 650px;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+/* Call to Action Buttons */
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.btn {
+  min-height: 47px;
+  padding: 0 20px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  transition: 0.22s;
+  text-decoration: none;
+}
+
+.primary {
+  background: linear-gradient(135deg, #18bf73, #24de87);
+  color: #03170c;
+  box-shadow: 0 12px 32px rgba(33, 216, 131, 0.2);
+}
+
+.primary:hover {
+  transform: translateY(-2px);
+}
+
+.ghost {
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--text);
+}
+
+.ghost:hover {
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.proof {
+  display: flex;
+  gap: 22px;
+  color: #708196;
+  font-size: 10px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   4. HERO VISUAL (ORB, CORE, RINGS, NODES)
+   ========================================================================== */
+.visual {
+  min-height: 390px;
+  display: grid;
+  place-items: center;
+}
+
+.orb {
+  width: 390px;
+  height: 390px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.ring {
+  position: absolute;
+  border: 1px solid rgba(33, 216, 131, 0.18);
+  border-radius: 50%;
+}
+
+.r1 {
+  inset: 42px;
+  animation: spin 23s linear infinite;
+}
+
+.r2 {
+  inset: 96px;
+  border-color: rgba(215, 173, 83, 0.17);
+  animation: spin 31s linear infinite reverse;
+}
+
+.core {
+  width: 140px;
+  height: 140px;
+  border-radius: 34px;
+  background: #f5faf8;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 0 55px rgba(33, 216, 131, 0.17), 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.core img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+}
+
+.node {
+  position: absolute;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: rgba(8, 20, 33, 0.93);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.ai {
+  top: 24px;
+  right: 25px;
+  color: #a6f4ca;
+}
+
+.data {
+  left: 10px;
+  bottom: 55px;
+  color: #d1deeb;
+}
+
+.auto {
+  right: 0;
+  bottom: 32px;
+  color: #ebcd89;
+}
+
+/* ==========================================================================
+   5. TRUST STRIP & GRID
+   ========================================================================== */
+.trust {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.trust-grid > div {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  padding: 19px 6px;
+  border-right: 1px solid var(--line);
+  font-size: 10px;
+  color: #98a8b9;
+}
+
+.trust-grid > div:last-child {
+  border-right: 0;
+}
+
+.trust-grid b {
+  color: var(--green);
+}
+
+/* ==========================================================================
+   6. GENERAL SECTIONS & HEADINGS
+   ========================================================================== */
+.section {
+  padding: 105px 0;
+}
+
+.heading {
+  max-width: 750px;
+  margin-bottom: 40px;
+}
+
+.heading h2 {
+  font: 800 clamp(32px, 4vw, 48px)/1.08 "Plus Jakarta Sans", Inter;
+  margin: 10px 0;
+}
+
+.heading p {
+  color: var(--muted);
+}
+
+/* ==========================================================================
+   7. CARDS GRID
+   ========================================================================== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.card {
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 15px;
+  background: linear-gradient(155deg, rgba(15, 32, 50, 0.8), rgba(7, 17, 29, 0.75));
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(33, 216, 131, 0.28);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.22);
+}
+
+.ico {
+  font-size: 23px;
+  color: var(--green);
+}
+
+.card h3 {
+  margin: 15px 0 7px;
+}
+
+.card p {
+  margin: 0;
+  color: #8d9eaf;
+  font-size: 12px;
+}
+
+/* ==========================================================================
+   8. FEATURED PANEL & SYSTEM MOCKUP
+   ========================================================================== */
+.featured {
+  padding-top: 65px;
+}
+
+.tag {
+  color: var(--green2) !important;
+  font-weight: 700;
+}
+
+.feature-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+  padding: 34px;
+  border-radius: 20px;
+  border: 1px solid rgba(33, 216, 131, 0.2);
+  background: radial-gradient(circle at 100% 0, rgba(33, 216, 131, 0.09), transparent 34%), rgba(10, 24, 39, 0.9);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.25);
+}
+
+.badge {
+  display: inline-block;
+  color: #8af0b9;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  border: 1px solid rgba(33, 216, 131, 0.25);
+  padding: 6px 9px;
+  border-radius: 999px;
+}
+
+.feature-panel h3 {
+  font: 800 31px/1.2 "Plus Jakarta Sans";
+  margin: 16px 0;
+}
+
+.feature-panel p {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.features {
+  display: grid;
+  gap: 11px;
+  margin: 20px 0;
+}
+
+.features > div {
+  display: flex;
+  gap: 10px;
+}
+
+.features > div > b {
+  color: var(--green);
+}
+
+.features strong,
+.features small {
+  display: block;
+}
+
+.features strong {
+  font-size: 12px;
+}
+
+.features small {
+  font-size: 10px;
+  color: #8496a9;
+}
+
+.text-link {
+  color: #9af3c2;
+  font-weight: 700;
+  font-size: 12px;
+  display: inline-flex;
+  gap: 10px;
+  text-decoration: none;
+}
+
+/* UI Mockup Window */
+.mock {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 13px;
+  overflow: hidden;
+  background: #071321;
+}
+
+.m-top {
+  height: 38px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 12px;
+  color: #8395a8;
+  font-size: 8px;
+}
+
+.m-top span {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #304357;
+}
+
+.m-top b {
+  margin-left: auto;
+}
+
+.m-body {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  min-height: 290px;
+}
+
+.m-body aside {
+  border-right: 1px solid var(--line);
+}
+
+.m-main {
+  padding: 15px;
+}
+
+.m-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.m-row > div {
+  padding: 11px;
+  border: 1px solid rgba(33, 216, 131, 0.14);
+  background: rgba(33, 216, 131, 0.04);
+  border-radius: 9px;
+}
+
+.m-row small {
+  display: block;
+  color: #61778c;
+  font-size: 7px;
+  letter-spacing: 0.1em;
+}
+
+.m-row b {
+  display: block;
+  font-size: 23px;
+}
+
+.chart {
+  height: 120px;
+  padding: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: end;
+  border: 1px solid var(--line);
+  border-radius: 9px;
+}
+
+.chart i {
+  display: block;
+  flex: 1;
+  background: linear-gradient(#37e49a, #0a754d);
+  border-radius: 4px 4px 2px 2px;
+}
+
+.note {
+  margin-top: 15px;
+  border-left: 3px solid var(--green);
+  padding: 13px 15px;
+  background: rgba(33, 216, 131, 0.04);
+  border-radius: 0 9px 9px 0;
+  color: #9aabba;
+  font-size: 10px;
+}
+
+.note b {
+  color: #d7e4ed;
+}
+
+/* ==========================================================================
+   9. CASE STUDY (MANTAP)
+   ========================================================================== */
+.case-grid {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.mantap-logo {
+  min-height: 280px;
+  display: grid;
+  place-items: center;
+  padding: 25px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #f4faf7;
+}
+
+.mantap-logo img {
+  width: 220px;
+  max-width: 90%;
+  object-fit: contain;
+}
+
+.case h2 {
+  font: 800 40px/1.1 "Plus Jakarta Sans";
+  margin: 8px 0;
+}
+
+.case p {
+  color: var(--muted);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 22px 0;
+}
+
+.metrics div {
+  padding: 14px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.metrics b {
+  display: block;
+  color: var(--green2);
+  font-size: 26px;
+}
+
+.metrics span {
+  color: #8294a7;
+  font-size: 9px;
+}
+
+.caveat {
+  padding: 11px 13px;
+  border: 1px solid rgba(215, 173, 83, 0.18);
+  border-radius: 10px;
+  background: rgba(215, 173, 83, 0.035);
+}
+
+.caveat b {
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  color: #e3c477;
+}
+
+.caveat p {
+  font-size: 10px;
+  margin: 4px 0 0;
+}
+
+/* ==========================================================================
+   10. STEPS, MANIFESTO, & CONTACT
+   ========================================================================== */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.step {
+  display: flex;
+  gap: 12px;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+}
+
+.step > b {
+  color: var(--green);
+}
+
+.step strong,
+.step small {
+  display: block;
+}
+
+.step strong {
+  font-size: 12px;
+}
+
+.step small {
+  color: #8294a7;
+  font-size: 10px;
+  margin-top: 3px;
+}
+
+.manifesto {
+  display: grid;
+  grid-template-columns: 1.2fr auto 1fr;
+  gap: 25px;
+  align-items: center;
+  padding: 34px;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  background: linear-gradient(115deg, rgba(33, 216, 131, 0.06), rgba(255, 255, 255, 0.015));
+}
+
+.manifesto h2 {
+  font: 800 28px/1.1 "Plus Jakarta Sans";
+}
+
+.manifesto h2 span {
+  color: var(--green);
+}
+
+.manifesto > strong {
+  font-size: 38px;
+  color: var(--green2);
+}
+
+.manifesto h3 {
+  margin: 7px 0;
+}
+
+.manifesto p {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.contact-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 32px;
+  border: 1px solid rgba(33, 216, 131, 0.18);
+  border-radius: 17px;
+  background: radial-gradient(circle at 80% 0, rgba(33, 216, 131, 0.08), transparent 30%), rgba(255, 255, 255, 0.02);
+}
+
+.contact-panel h2 {
+  font: 800 32px/1.1 "Plus Jakarta Sans";
+  margin: 8px 0;
+}
+
+.contact-panel p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.contact-panel .actions {
+  margin: 0;
+}
+
+/* ==========================================================================
+   11. FOOTER & ANIMATION UTILITIES
+   ========================================================================== */
+footer {
+  border-top: 1px solid var(--line);
+  padding: 38px 0;
+  margin-top: 45px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  align-items: end;
+}
+
+.foot > div:last-child {
+  text-align: right;
+  color: #8597aa;
+  font-size: 10px;
+}
+
+.foot p {
+  margin: 0;
+}
+
+.foot .brand img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Reveal Scroll Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(17px);
+  transition: 0.7s;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: none;
+}
+
+.d1 {
+  transition-delay: 0.08s;
+}
+
+.d2 {
+  transition-delay: 0.16s;
+}
+
+.d3 {
+  transition-delay: 0.24s;
+}
+
+/* Base Keyframe Animations */
+@keyframes pulse {
+  50% {
+    opacity: 0.4;
+    transform: scale(0.86);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==========================================================================
+   12. MEDIA QUERIES (RESPONSIVE)
+   ========================================================================== */
+@media (max-width: 950px) {
+  .hero-grid,
+  .feature-panel,
+  .case-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .visual {
+    min-height: 330px;
+  }
+
+  .cards,
+  .steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .feature-panel {
+    padding: 25px;
+  }
+
+  .contact-panel {
+    display: block;
+  }
+
+  .contact-panel .actions {
+    margin-top: 20px;
+  }
+
+  .manifesto {
+    grid-template-columns: 1fr;
+  }
+
+  .manifesto > strong {
+    display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-wrap nav {
+    display: none;
+    position: absolute;
+    top: 77px;
+    left: 4%;
+    right: 4%;
+    padding: 14px;
+    flex-direction: column;
+    background: #07111f;
+    border: 1px solid var(--line);
+    border-radius: 12px;
+  }
+
+  .nav-wrap nav.open {
+    display: flex;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .hero {
+    padding: 75px 0 55px;
+  }
+
+  .hero h1 {
+    font-size: 43px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .orb {
+    width: 300px;
+    height: 300px;
+  }
+
+  .core {
+    width: 110px;
+    height: 110px;
+  }
+
+  .core img {
+    width: 88px;
+    height: 88px;
+  }
+
+  .r1 {
+    inset: 28px;
+  }
+
+  .r2 {
+    inset: 66px;
+  }
+
+  .ai {
+    top: 5px;
+    right: 0;
+  }
+
+  .data {
+    left: 0;
+    bottom: 24px;
+  }
+
+  .auto {
+    right: 0;
+    bottom: 8px;
+  }
+
+  .trust-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cards,
+  .steps,
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+  .mantap-logo {
+    min-height: 220px;
+  }
+
+  .case h2 {
+    font-size: 34px;
+  }
+
+  .contact-panel h2 {
+    font-size: 29px;
+  }
+
+  .foot {
+    display: block;
+  }
+
+  .foot > div:last-child {
+    text-align: left;
+    margin-top: 20px;
+  }
+}
+
+/* ==========================================================================
+   13. NEW: ANIMASI HERO VISUAL (FLOATING & PULSING)
+   ========================================================================== */
+
+/* Kartu Core Logo Utama (Melayang Naik-Turun Halus) */
+.core {
+  animation: floatCore 4s ease-in-out infinite;
+}
+
+@keyframes floatCore {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1deg);
+  }
+}
+
+/* Node Badge (AI, DATA, AUTO - Melayang Bergantian) */
+.node {
+  animation: floatNode 3.5s ease-in-out infinite;
+}
+
+.node.ai {
+  animation-delay: 0s;
+}
+
+.node.data {
+  animation-delay: 1.2s;
+}
+
+.node.auto {
+  animation-delay: 2.3s;
+}
+
+@keyframes floatNode {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.06);
+  }
+}
+
+/* Garis Lingkaran Orbit (Efek Denyut Pulsing Halus) */
+.ring {
+  animation: pulseRing 6s ease-in-out infinite;
+}
+
+@keyframes pulseRing {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.03);
+  }
+}
