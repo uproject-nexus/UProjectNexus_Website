@@ -268,10 +268,11 @@ header {
   width: 140px;
   height: 140px;
   border-radius: 34px;
-  background: #f5faf8;
+  background: #07111f; /* Mengubah background menjadi Navy khas UPN */
+  border: 1px solid rgba(33, 216, 131, 0.25); /* Bingkai emerald tipis agar presisi */
   display: grid;
   place-items: center;
-  box-shadow: 0 0 55px rgba(33, 216, 131, 0.17), 0 25px 60px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 55px rgba(33, 216, 131, 0.2), 0 25px 60px rgba(0, 0, 0, 0.5);
 }
 
 .core img {
